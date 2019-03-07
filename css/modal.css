@@ -1,0 +1,257 @@
+/* modal section */
+
+/* The comment icon is the Modal trigger btn */
+#modalBtn {
+    top: 2rem;
+    left: 200;
+    right: 5rem;
+    position: fixed;
+    color: #f4f4f4;
+    transition: 0.5s;
+    filter: drop-shadow(10px 10px 10px black);
+    animation: animate 1s linear infinite;
+}
+
+#modalBtn:hover,
+#modalBtn:focus {
+    color: var(--btn-dark);
+    cursor: pointer;
+    animation: 0;
+}
+
+/* modal overlay */
+#modalBox {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Close Modal trigger btn style */
+.closeBtn {
+    color: #fff;
+    font-size: 40px;
+    float: right;
+    padding: 0.75rem;
+    margin-right: 0.25rem;
+    transition: 0.5s;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: red;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+/* Modal container */
+#modalBox .container {
+    background: #eee;
+    max-width: 90%;
+    height: 670px;
+    margin: 5% auto;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* modal form style */
+#modalBox .form-wrapper {
+    background: #aaa;
+}
+
+
+#modalBox .form-wrapper h3 {
+    margin-top: -0.95px;
+    background: var(--form-main-color);
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 1rem;
+    color: #fff;
+}
+
+#modalBox .form-wrapper p {
+    margin: 0.1rem 1rem;
+    padding: 0.25rem 1rem;
+    overflow: hidden;
+}
+
+#modalBox .form-wrapper p label {
+    display: block;
+}
+
+#modalBox .anonymous {
+    margin: 0.1rem 2rem;
+}
+
+#modalBox .anonymous [type="checkbox"] {
+    padding: 1rem;
+}
+
+#modalBox .form-wrapper p input,
+select,
+textarea,
+button {
+    width: 100%;
+}
+
+#modalBox .form-wrapper p textarea {
+    resize: none;
+}
+
+#modalBox .form-wrapper p input,
+select {
+    padding: 0.75rem;
+}
+
+#modalBox .form-wrapper p button {
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    background: var(--form-main-color);
+    text-decoration: none;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+#modalBox .form-wrapper p button:hover,
+.form-wrapper p button:focus {
+    background: #333;
+    cursor: pointer;
+}
+
+/* comment section */
+#modalBox.comment-heading {
+    background: #ccc;
+    padding: 0.7rem;
+    margin-top: -0.05rem;
+}
+
+#modalBox .comments {
+    margin: 0.2rem 2rem;
+}
+
+#modalBox .comments .comment-box p:last-child {
+    margin-top: -13px;
+}
+
+#modalBox .comments .comment-box {
+    background: #ddd;
+    padding: 0.02rem 0.3rem;
+    /* line-height: 0.2; */
+    font-size: 15px;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+}
+
+#modalBox .comments .comment-utility {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -0.8rem;
+}
+
+#modalBox .time,
+#modalBox .like,
+#modalBox .reply {
+    padding-right: 10px;
+}
+
+#modalBox .like-count {
+    /* display: none; */
+    background: #fff;
+    color: var(--form-main-color);
+    padding: 1px;
+    border-radius: 10px;
+}
+
+#modalBox .like:hover {
+    color: var(--form-main-color);
+}
+
+#modalBox .like:hover,
+#modalBox .reply:hover {
+    cursor: pointer;
+}
+
+.comment-input {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.comment-input #inputComment {
+    padding: 1rem 0rem;
+
+}
+
+.comment-input button {
+    width: 20px;
+    border: none;
+    padding: 3px;
+    background: var(--form-main-color);
+}
+
+/* question section */
+#modalBox .question-section {
+    overflow: auto;
+}
+
+#modalBox .question-heading {
+    background: #ddd;
+    padding: 0.7rem;
+    margin-top: -0.05rem;
+}
+
+#modalBox .q-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#modalBox .question-id {
+    border: 2px solid var(--form-main-color);
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 1rem;
+}
+
+#modalBox .status {
+    margin-top: -1rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.5rem;
+    align-content: center;
+    align-items: center;
+}
+
+#modalBox .answered {
+    background: rgb(2, 170, 2);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+#modalBox .pending {
+    background: orange;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+/* fixing comment section */
+.cover {
+    overflow-y: auto;
+    height: 100vh;
+}

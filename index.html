@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Presentation app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="/css/mobile.css">
+
+</head>
+
+<body>
+    <i class="fas fa-comment-dots fa-3x" id="modalBtn"></i>
+    <!-- Page 1 (Intro page) -->
+    <section id="page-1" class="page">
+        <h1>Welcome To My Presentation</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ipsa doloremque provident aperiam est cum iste
+            laudantium iure eaque modi accusantium ut quidem consequatur praesentium inventore numquam maxime ex
+            veniam, dolore voluptatum repellendus sint sequi laborum itaque. Earum, iure nostrum?</p>
+
+        <div>
+            <a href="#page-2" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Page 2 -->
+    <section id="page-2" class="page">
+        <h1>Page Two</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ipsa doloremque provident aperiam est cum iste
+            laudantium iure eaque modi accusantium ut quidem consequatur praesentium inventore numquam maxime ex
+            veniam, dolore voluptatum repellendus sint sequi laborum itaque. Earum, iure nostrum?</p>
+
+        <div>
+            <a href="#page-1" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+
+            <a href="#page-3" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Page 3 -->
+    <section id="page-3" class="page">
+        <h1>Page Three</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ipsa doloremque provident aperiam est cum iste
+            laudantium iure eaque modi accusantium ut quidem consequatur praesentium inventore numquam maxime ex
+            veniam, dolore voluptatum repellendus sint sequi laborum itaque. Earum, iure nostrum?</p>
+
+        <div>
+            <a href="#page-2" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+            <a href="#page-4" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+
+        </div>
+    </section>
+    <!-- Page Conclusion (Last page)-->
+    <section id="page-4" class="page">
+        <h1>Conclusion</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ipsa doloremque provident aperiam est cum iste
+            laudantium iure eaque modi accusantium ut quidem consequatur praesentium inventore numquam maxime ex
+            veniam, dolore voluptatum repellendus sint sequi laborum itaque. Earum, iure nostrum?</p>
+
+        <div>
+            <a href="#page-3" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+            <a href="#page-1" class="btn">Back To Top <i class="fas fa-arrow-circle-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Modal Content Here -->
+    <div id="modalBox">
+        <p class="closeBtn" id="closeModalBtn">X</p>
+        <div class="container">
+            <!--create tab for mobile view-->
+            <!-- Tabs -->
+            <ul id="tabs">
+                <li class="active" id="tab1"><a href="#">Ask <i class="fas fa-question-circle"></i></a></li>
+                <li class="" id="tab2"><a href="#"><i class="fas fa-comments"></i> <em>Comment</em></a></li>
+                <li class="" id="tab3"><a href="#"><i class="fas fa-question-circle"></i> <em>Q/A</em></a></li>
+            </ul>
+
+            <!-- Tab Contents form-tab-->
+            <div class="" id="form-tab">
+                <form action="" class="form-wrapper">
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </p>
+                    <span class="anonymous"><label for="anonymous"> <small><em>Go Anonymous</em></small></label>
+                        <input type="checkbox" name="anonymous" id="anonymous"></span>
+                    <p>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email">
+                    </p>
+                    <p>
+                        <label>Are You Making A Comment OR Asking A Question..? Specify</label>
+                        <select>
+                            <option value="question">Asking A Question</option>
+                            <option value="comment">Making A Comment</option>
+                        </select>
+                    </p>
+                    <p>
+                        <textarea name="message" rows="10"></textarea>
+                    </p>
+                    <p>
+                        <button id="submitBtn">Submit</button>
+                    </p>
+                </form>
+            </div>
+            <!-- Comment Tab -->
+            <div class="" id="comment-tab">
+                <div class="cover">
+                    <div class="comments">
+                        <div class="comment-box">
+                            <p><strong>Name</strong></p>
+                            <p>Comment Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. </p>
+                        </div>
+                        <div class="comment-utility">
+                            <p class="time">1d</p>
+                            <p class="like">Like</p>
+                            <p class="reply">Reply</p>
+                            <p class="like-count"><i class="fas fa-thumbs-up"></i> 1</p>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="comment-box">
+                            <p><strong>Name</strong></p>
+                            <p>Comment Lorem ipsum</p>
+                        </div>
+                        <div class="comment-utility">
+                            <p class="time">1d</p>
+                            <p class="like">Like</p>
+                            <p class="reply">Reply</p>
+                            <p class="like-count"><i class="fas fa-thumbs-up"></i> 1</p>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="comment-box">
+                            <p><strong>Name</strong></p>
+                            <p>Comment Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. </p>
+                        </div>
+                        <div class="comment-utility">
+                            <p class="time">1d</p>
+                            <p class="like">Like</p>
+                            <p class="reply">Reply</p>
+                            <p class="like-count"><i class="fas fa-thumbs-up"></i> 1</p>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="comment-box">
+                            <p><strong>Name</strong></p>
+                            <p>Comment Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. </p>
+                        </div>
+                        <div class="comment-utility">
+                            <p class="time">1d</p>
+                            <p class="like">Like</p>
+                            <p class="reply">Reply</p>
+                            <p class="like-count"><i class="fas fa-thumbs-up"></i> 1</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-input">
+                        <input type="text" name='comment' placeholder="Type">
+                        <button class="comment-btn">Send</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Question Tab -->
+            <div class="" id="question-tab">
+                <div class="cover">
+                    <div class="question-box">
+                        <div class="q-wrapper">
+                            <p class="question-id">1</p>
+                            <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+                        </div>
+                        <p class="status"><span class="answered"></span> <small><em>Answered</em></small></p>
+                    </div>
+                    <div class="question-box">
+                        <div class="q-wrapper">
+                            <p class="question-id">2</p>
+                            <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+                        </div>
+                        <p class="status"><span class="pending"></span> <small><em>Pending</em></small></p>
+                    </div>
+                    <div class="question-box">
+                        <div class="q-wrapper">
+                            <p class="question-id">2</p>
+                            <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+                        </div>
+                        <p class="status"><span class="pending"></span> <small><em>Pending</em></small></p>
+                    </div>
+                    <div class="question-box">
+                        <div class="q-wrapper">
+                            <p class="question-id">2</p>
+                            <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+                        </div>
+                        <p class="status"><span class="pending"></span> <small><em>Pending</em></small></p>
+                    </div>
+                    <div class="question-box">
+                        <div class="q-wrapper">
+                            <p class="question-id">2</p>
+                            <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+                        </div>
+                        <p class="status"><span class="pending"></span> <small><em>Pending</em></small></p>
+                    </div>
+                    <div class="question-box">
+                        <div class="q-wrapper">
+                            <p class="question-id">2</p>
+                            <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+                        </div>
+                        <p class="status"><span class="pending"></span> <small><em>Pending</em></small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WideScreen view of the modal -->
+            <form action="" id="form-section" class="form-wrapper">
+                <h3>Leave A Question OR Comment</h3>
+                <p>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </p>
+                <span class="anonymous"><label for="anonymous"> <small><em>Go Anonymous</em></small></label>
+                    <input type="checkbox" name="anonymous" id="anonymous"></span>
+                <p>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+                </p>
+                <p>
+                    <label>Are You Making A Comment OR Asking A Question..? Specify</label>
+                    <select>
+                        <option value="question">Asking A Question</option>
+                        <option value="comment">Making A Comment</option>
+                    </select>
+                </p>
+                <p>
+                    <textarea name="message" rows="10"></textarea>
+                </p>
+                <p>
+                    <button id="submitBtn">Submit</button>
+                </p>
+            </form>
+            <div class="comment-section">
+                <div class="text-center comment-heading">
+                    <i class="fas fa-comments fa-2x"></i> <em>Share Your view</em>
+                </div>
+                <div class="cover">
+                    <div class="comments">
+                        <div class="comment-box">
+                            <p><strong>Name</strong></p>
+                            <p>Comment Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. </p>
+                        </div>
+                        <div class="comment-utility">
+                            <p class="time">1d</p>
+                            <p class="like">Like</p>
+                            <p class="reply">Reply</p>
+                            <p class="like-count"><i class="fas fa-thumbs-up"></i> 1</p>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="comment-box">
+                            <p><strong>Name</strong></p>
+                            <p>Comment Lorem ipsum</p>
+                        </div>
+                        <div class="comment-utility">
+                            <p class="time">1d</p>
+                            <p class="like">Like</p>
+                            <p class="reply">Reply</p>
+                            <p class="like-count"><i class="fas fa-thumbs-up"></i> 1</p>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="comment-box">
+                            <p><strong>Name</strong></p>
+                            <p>Comment Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. </p>
+                        </div>
+                        <div class="comment-utility">
+                            <p class="time">1d</p>
+                            <p class="like">Like</p>
+                            <p class="reply">Reply</p>
+                            <p class="like-count"><i class="fas fa-thumbs-up"></i> 1</p>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="comment-box">
+                            <p><strong>Name</strong></p>
+                            <p>Comment Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. </p>
+                        </div>
+                        <div class="comment-utility">
+                            <p class="time">1d</p>
+                            <p class="like">Like</p>
+                            <p class="reply">Reply</p>
+                            <p class="like-count"><i class="fas fa-thumbs-up"></i> 1</p>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="comment-box">
+                            <p><strong>Name</strong></p>
+                            <p>Comment Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. </p>
+                        </div>
+                        <div class="comment-utility">
+                            <p class="time">1d</p>
+                            <p class="like">Like</p>
+                            <p class="reply">Reply</p>
+                            <p class="like-count"><i class="fas fa-thumbs-up"></i> 1</p>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="comment-box">
+                            <p><strong>Name</strong></p>
+                            <p>Comment Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. </p>
+                        </div>
+                        <div class="comment-utility">
+                            <p class="time">1d</p>
+                            <p class="like">Like</p>
+                            <p class="reply">Reply</p>
+                            <p class="like-count"><i class="fas fa-thumbs-up"></i> 1</p>
+                        </div>
+                    </div>
+                    <div class="comment-input">
+                        <input type="text" name='comment' placeholder="Type">
+                        <button class="comment-btn">Send</button>
+                    </div>
+                </div>
+            </div>
+            <div class="question-section">
+                <div class="text-center question-heading">
+                    <i class="fas fa-question-circle fa-2x"></i> <em>Q/A Section</em>
+                </div>
+                <div class="question-box">
+                    <div class="q-wrapper">
+                        <p class="question-id">1</p>
+                        <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+                    </div>
+                    <p class="status"><span class="answered"></span> <small><em>Answered</em></small></p>
+                </div>
+                <div class="question-box">
+                    <div class="q-wrapper">
+                        <p class="question-id">2</p>
+                        <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+                    </div>
+                    <p class="status"><span class="pending"></span> <small><em>Pending</em></small></p>
+                </div>
+                <div class="question-box">
+                    <div class="q-wrapper">
+                        <p class="question-id">2</p>
+                        <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+                    </div>
+                    <p class="status"><span class="pending"></span> <small><em>Pending</em></small></p>
+                </div>
+                <div class="question-box">
+                    <div class="q-wrapper">
+                        <p class="question-id">2</p>
+                        <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+                    </div>
+                    <p class="status"><span class="pending"></span> <small><em>Pending</em></small></p>
+                </div>
+                <div class="question-box">
+                    <div class="q-wrapper">
+                        <p class="question-id">2</p>
+                        <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+                    </div>
+                    <p class="status"><span class="pending"></span> <small><em>Pending</em></small></p>
+                </div>
+                <div class="question-box">
+                    <div class="q-wrapper">
+                        <p class="question-id">2</p>
+                        <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+                    </div>
+                    <p class="status"><span class="pending"></span> <small><em>Pending</em></small></p>
+                </div>
+                <div class="question-box">
+                    <div class="q-wrapper">
+                        <p class="question-id">2</p>
+                        <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+                    </div>
+                    <p class="status"><span class="pending"></span> <small><em>Pending</em></small></p>
+                </div>
+                <div class="question-box">
+                    <div class="q-wrapper">
+                        <p class="question-id">2</p>
+                        <p class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, esse.</p>
+                    </div>
+                    <p class="status"><span class="pending"></span> <small><em>Pending</em></small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- jQuery code link -->
+    <script src="/js/jquery.min.js"></script>
+    <!-- main javascript  -->
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

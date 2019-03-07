@@ -1,0 +1,103 @@
+.page h1 {
+    font-size: 2rem;
+    margin: 0.7rem;
+}
+
+.page p {
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+#modalBtn {
+    top: 1rem;
+    left: 200;
+    right: 1rem;
+}
+
+/* Close Modal trigger btn style */
+.closeBtn {
+    font-size: 30px;
+    padding: 0.75rem 0.25rem;
+    margin-right: 0.1rem;
+    transition: 0.5s;
+}
+
+
+/* modal container */
+#modalBox .container {
+    margin-top: 2.5rem;
+    display: block;
+    background: #eee;
+    height: auto;
+}
+
+/* Hiding tab header on widescreen */
+
+
+
+
+/* mobile view of the modal box */
+#modalBox .container ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.45rem 0.1rem;
+    margin-bottom: -4px;
+    align-content: center;
+    height: auto;
+    font-size: 1.2rem;
+
+}
+
+#modalBox .container ul li {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+#modalBox .container ul li a {
+    color: #000;
+}
+
+/* showing all tabs on widescreen */
+#form-tab {
+    display: block;
+}
+
+#comment-tab {
+    display: none;
+}
+
+#question-tab {
+    display: none;
+}
+
+#modalBox #form-tab form {
+    padding-top: 1rem;
+}
+
+.active {
+    border-bottom: 5px solid slateblue;
+    margin-bottom: -7px;
+}
+
+.closeBtn {
+    margin-top: -0.65rem;
+}
+
+/* Hiding widescreen modal content */
+#modalBox .container #form-section {
+    display: none;
+}
+
+#modalBox .container .comment-section {
+    display: none;
+}
+
+#modalBox .container .question-section {
+    display: none;
+}
